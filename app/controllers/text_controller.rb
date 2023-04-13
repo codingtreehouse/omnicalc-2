@@ -12,7 +12,7 @@ class TextController < ApplicationController
 
     # Craft your SMS as a Hash literal with three keys
     sms_info = {
-      :from => ENV.fetch("TWILIO_SENDING_NUMBER"),
+      :from => ENV.fetch("TWILIO_SENDING_PHONE_NUMBER"),
       :to => params.fetch("number"), # Put your own phone number here if you want to see it in action
       :body => "Hello, #{params.fetch("name")}"
     }
