@@ -11,6 +11,9 @@ gem 'puma', '~> 4.1'
 # Use Active Model has_secure_password
 gem 'bcrypt'
 
+gem 'twilio-ruby'
+
+gem 'ruby-openai'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console

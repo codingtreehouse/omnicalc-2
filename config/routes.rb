@@ -14,4 +14,10 @@ Rails.application.routes.draw do
   get("/wizard_divide", {:controller => "math", :action => "divide_results"})
   get("/divide", {:controller => "math", :action => "gotodivide"})
 
+  get("/text_form",{:controller => "text", :action => "textform"})
+  get("/text",{:controller => "text", :action => "textnumber"})
+
+  get("/mixology", {:controller => "text", :action => "mixology"})
+  get("/text_form", {:controller => "text", :action => "textform"})
+
 end
